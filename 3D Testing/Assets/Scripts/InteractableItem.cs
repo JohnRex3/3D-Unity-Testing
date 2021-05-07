@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInteract : MonoBehaviour
+public class InteractableItem : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,8 +13,6 @@ public class PlayerInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
-        Physics.Raycast(transform.position, transform.forward, out hit);
-        Debug.Log(hit.transform.gameObject.name);
+        
     }
 }
