@@ -1,0 +1,11 @@
+Videos:
+
+
+
+Intro to Unity particles video:
+
+https://www.youtube.com/watch?v=FEA1wTMJAR0
+
+
+Rig character video (presumably inverse kinematics as well)
+https://www.youtube.com/watch?v=SBYb1YmaOMY
