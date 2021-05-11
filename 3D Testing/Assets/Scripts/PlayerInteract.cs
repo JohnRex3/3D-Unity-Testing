@@ -19,7 +19,7 @@ public class PlayerInteract : MonoBehaviour
         {
             Shoot();
         }
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonUp("Fire2"))
         {
             Interact();
         }
@@ -31,6 +31,11 @@ public class PlayerInteract : MonoBehaviour
         if (hit.transform.gameObject.GetComponent<InteractableItem>() != null)
         {
             hit.transform.parent = gameObject.transform;
+            {
+                hit.transform.parent = transform;
+                hit.transform.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                hit.transform.gameObject.GetComponent<Collider>().isTrigger = true;
+            }
         }
     }
     void Shoot()
